@@ -10,6 +10,6 @@
 ◾ Compatible with all mobile📱devices and with a beautiful and pleasant user interface.<br>
 ◾ And More... <br>
 
-#📌I inspired from this website<br>
+#I inspired from this website📌 :<br>
 
 <img src="preview.jpg" >

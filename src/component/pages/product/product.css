@@ -1,0 +1,125 @@
+@import url('../../../App.css');
+
+.best__content{
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.5rem;
+}
+
+.product__menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__menu .product__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.product__menu .product__list li .product__link{
+    color: var(--title-color);
+    font-weight: 400;
+}
+
+.product__menu .buttons {
+    display: contents;
+}
+
+.best__product__content{
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.5rem;
+}
+
+.product__card{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: var(--container2-color);
+    padding: var(--mg-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__card .product__img img{
+    width: 100%;
+    height: initial;
+    max-width: 300px;
+    margin-bottom: var(--mg-7);
+}
+
+.sub__title{
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mg-9);
+    text-align: center;
+}
+
+.product__data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product__data .price{
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: var(--h3-font-size);
+}
+
+@media screen and (min-width: 600px) {
+    .best__product__content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+
+    .product__menu .product__list{
+        display: flex;
+        flex-direction: row;
+        gap: var(--mg-7);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .best__product__content{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+    
+    .product__menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: .5rem;
+    }
+
+    .product__menu .buttons {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+
+
+/*=========== Product Component =============*/
+.product__contents{
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+ .product__contents{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+}
+
+@media screen and (min-width: 900px) {
+    .product__contents{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+}

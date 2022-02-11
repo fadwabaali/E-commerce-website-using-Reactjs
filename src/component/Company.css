@@ -1,0 +1,19 @@
+@import url('../App.css');
+
+.company__sec{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.company__img img{
+    width: 250px;
+    height: initial;
+}
+
+.company__contents{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}

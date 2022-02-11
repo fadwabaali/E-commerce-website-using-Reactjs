@@ -1,0 +1,161 @@
+@import url('../App.css');
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--container2-color);
+    z-index: 999;
+}
+
+nav{ 
+    position: relative;
+    width: 100%;
+    height:100%;
+    flex-direction: column;
+}
+
+.logo__sec h1{
+    color: var(--primary-color-alt);
+    font-size: var(--h2-font-size);
+    cursor: pointer;
+}
+
+.menu__toggler{
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--title-color);
+    right: 50px;
+}
+
+.navigation{
+    position: absolute;
+    top: 40px;
+    right: -100%;
+    width: 80%;
+    height: 90vh;
+    background-color: var(--container2-color);
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 15px;
+    transition: .5s ease;
+}
+
+.navigation.open__nav{
+    right: 0;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav__list .nav__item{
+    margin-bottom: var(--mg-8);
+}
+
+.nav__list .nav__item .nav__link{
+    color: var(--link-color);
+    font-weight: 400;
+}
+
+.search__input{
+    position: relative;
+    display: none;
+}
+
+.search__input .input__search{
+    border-radius: 40px;
+    border: 1px solid var(--text-color-alt);
+    padding: var(--mg-9);
+}
+
+.search__input .search__icon{
+    position: absolute;
+    right:10px;
+    transform: translateY(10px);
+}
+
+.navigation .nav__icons{
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation .nav__icons li{
+    margin-bottom: var(--mg-9);
+    border-radius: 50%;
+    padding: var(--mg-9);
+    cursor: pointer;
+    color: black;
+    font-size: var(--h3-font-size);
+    text-align: center;
+    background-color: hsl(0, 0%, 89%);
+}
+
+.navigation .nav__icons li:hover{
+    color: var(--primary-color-alt);
+    transform: translateY(-10px);
+    transition: .8s ease;
+}
+
+@media only screen and (min-width: 900px) {
+    header{
+        height: calc(var(--header-height) + 4rem);
+    }
+
+    .logo__sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation{
+        position: relative;
+        right: 0%;
+        top: 0;
+        width: 100%;
+        height: initial;
+        background: transparent;
+        border: none;
+        flex-direction: row;
+        justify-content: space-evenly !important;
+        gap: 1.5rem;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation .nav__icons {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation .nav__icons li{
+        margin-right: var(--mg-9);
+    }
+
+    .nav__list .nav__item{
+        margin-right: var(--mg-8);
+        margin-bottom: 0;
+    }
+    
+    .search__input{
+        display: block;
+    }
+    
+    .menu__toggler{
+        display: none;
+    }
+}

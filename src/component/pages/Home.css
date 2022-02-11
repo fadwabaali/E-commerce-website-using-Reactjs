@@ -1,0 +1,54 @@
+@import url('./../../App.css');
+
+
+.home__sec{
+    margin-top: calc(var(--header-height) + 4rem);
+    cursor: pointer;
+}
+
+.home__content{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.home__data{
+    flex: 1;
+}
+
+.home__img{
+    order: -1;
+    flex: 1;
+}
+
+.home__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 ;
+    background: var(--primary-color) !important;
+}
+
+.swiper-pagination-bullet {
+    background: var(--primary-color) !important;
+    opacity: 0.5 ;
+    margin-top: var(--mg-7) !important;
+}
+
+@media screen and (min-width: 600px) {
+    .home__content{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .home__img{
+        order: initial;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .home__sec{
+        margin-top: calc(var(--header-height) + 10rem);
+    }
+}

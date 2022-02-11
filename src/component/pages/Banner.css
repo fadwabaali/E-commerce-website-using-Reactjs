@@ -1,0 +1,68 @@
+@import url('../../App.css');
+
+.banner__sec{
+    background: var(--container2-color);
+    width: 100%;
+    height: 100%;
+}
+
+.banner__contents{
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.banner__contents .banner__img img{
+    max-width: 400px;
+    width: 100%;
+    height: initial;
+}
+
+.banner__data .price{
+    color: var(--title-color);
+    font-weight: 500;
+    margin-bottom: var(--mg-4);
+    justify-content:space-between;
+    display: flex;
+}
+
+.banner__data .price span{
+    color: var(--primary-color);
+}
+
+.count__down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.count__down .num{
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    font-weight: 600;
+    margin-bottom: var(--mg-8);
+    text-align: center;
+}
+
+.count__down .title{
+    color: black;
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    margin-bottom: var(--mg-8);
+    background-color: hsl(0, 0%, 93%);
+    padding: var(--mg-9);
+    opacity: .8;
+}
+
+@media screen and (min-width: 765px) {
+    .banner__contents{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .banner__contents .banner__img img{
+        max-width: 700px;
+        width: 100%;
+        height: initial;
+    }
+}

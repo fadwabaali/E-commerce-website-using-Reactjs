@@ -1,6 +1,6 @@
 # E-commerce-website-using-Reactjs
 
-◾ E-commerce 📺website, using HTML, CSS & ReactJS. <br>
+◾ E-commerce 📺website, using ReactJS. <br>
 ◾ Using React/Router🌎 <br>
 ◾ Using Redux/React Redux <br>
 ◾ Using SwiperJS library📙 <br>
